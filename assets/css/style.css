@@ -1,0 +1,893 @@
+* {
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+	-webkit-font-smoothing:antialiased;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+body {
+	overflow:hidden;
+	width:1024px;
+	height:768px;
+	font-size:31px;
+	font-family:'amatic_scregular';
+	-webkit-overflow-scrolling:touch;
+}
+
+#mainContainer {
+	position:relative;
+	width:1024px;
+	height:3072px;
+}
+
+h1 {font-size: 41px; font-weight: normal;}
+p.intro {font-size: 25px;}
+
+#containerIntro {
+	position:absolute;
+	top:0;
+	width:1024px;
+	height:769px;
+	background:url(../img/bg-intro.png) no-repeat;
+	overflow: hidden;	
+}
+
+.pGreen {
+    color: #518359;
+    font-family:'amaticbold';
+}
+
+.pBlue {
+    color: #628ca5;
+    font-family:'amaticbold';
+}
+
+.pOrange {
+    color: #e7911a;
+    font-family:'amaticbold';
+}
+
+.pCity {
+    color: #5e6167;
+    font-family:'amaticbold';
+}
+
+.pRed {
+    color: #aa2122;
+    font-family:'amaticbold';
+}
+
+#tapappapa {
+	position: absolute;
+	top: 18px;
+	left: 30px;
+	width: 146px;
+	height: 98px;
+	background:url(../img/tapappapa.png) no-repeat;
+    z-index: 2;
+}
+
+.yeah {
+   background-color: #518359;
+   color: #fff;
+   font-family:'amaticbold';
+}
+
+.subline {
+    font-size: 20px;
+    width: 160px;
+    height: 16px;
+    position: absolute;
+    top: 95px;
+    letter-spacing: 2px;
+    left: 27px;
+    font-family:'amaticbold';
+    color: #bdbdbd;
+    z-index: 0;
+}
+
+#logoKlein {
+    position:absolute;
+    left:30px;
+    bottom:30px;
+    z-index:10000;
+    width:53px;
+    height:36px;
+    background:url(../img/logo-klein.png) no-repeat;
+}
+.introText {
+	position: absolute;
+	top: 30px;
+	left: 240px;
+	width: 500px;
+	/*background: #fff;*/
+	margin: 0 auto;
+	padding: 20px;
+}
+
+#score {
+	position:fixed;
+	right:30px;
+	bottom:0;
+	z-index:999;
+	width:200px;
+	height:133px;
+	color: #fff;
+	text-align:right;
+	text-shadow:3px 3px 0 #000;
+	font-size:133px;
+	font-family:'soup_of_justicesoupofjustice';
+}
+
+
+#containerRaceOne {
+	position:absolute;
+	top:769px;
+	width:1024px;
+	height:768px;
+	background:url('../img/bg-raceOne.png') no-repeat;
+	overflow: hidden;
+}
+
+#containerRaceTwo {
+	position:absolute;
+	top:1537px;
+	width:1024px;
+	height:768px;
+	background:url('../img/bg-raceTwo.png') no-repeat;
+	overflow: hidden;
+}
+
+#containerRaceThree {
+	position:absolute;
+	top:2305px;
+	width:1024px;
+	height:768px;
+	background:url('../img/bg-raceThree.png') no-repeat;
+	overflow: hidden;
+}
+
+#containerRaceFour {
+	position:absolute;
+	top:3073px;
+	width:1024px;
+	height:768px;
+	background:url('../img/bg-raceFour.png') no-repeat;
+	overflow: hidden;
+}
+
+#containerRaceFive {
+	position:absolute;
+	top:3841px;
+	width:1024px;
+	height:768px;
+	background:url('../img/bg-raceFive.png') no-repeat;
+	overflow: hidden;
+}
+
+#containerRaceSix {
+	position:absolute;
+	top:4609px;
+	width:1024px;
+	height:768px;
+	background:url('../img/bg-raceSix.png') no-repeat;
+	overflow: hidden;
+}
+
+#containerRaceSeven {
+	position:absolute;
+	top:5377px;
+	width:1024px;
+	height:768px;
+	background:url('../img/bg-raceSeven.png') no-repeat;
+	overflow: hidden;
+}
+
+#containerRaceEight {
+	position:absolute;
+	top:6145px;
+	width:1024px;
+	height:768px;
+	background:url('../img/bg-raceEight.png') no-repeat;
+	overflow: hidden;
+}
+
+#containerRaceNine {
+	position:absolute;
+	top:6913px;
+	width:1024px;
+	height:768px;
+	background:url('../img/bg-raceNine.png') no-repeat;
+	overflow: hidden;
+}
+
+#containerRaceTen {
+	position:absolute;
+	top:7681px;
+	width:1024px;
+	height:768px;
+	background:url('../img/bg-raceTen.png') no-repeat;
+	overflow: hidden;
+}
+
+#trackOne {
+    position:absolute;
+    top: 54px;
+    left: 135px;
+    width:732px;
+    height:670px;
+    background:url(../img/trackOne.png) no-repeat;
+    z-index: 1;
+}
+
+#carOne {
+    position:absolute;
+    top: 78px;
+    left: 495px;
+    width:33px;
+    height:35px;
+    background:url(../img/carOne.png) no-repeat;
+    z-index: 2;
+    -webkit-backface-visibility: hidden;
+}
+
+
+#carTwo {
+    position:absolute;
+    top: 78px;
+    left: 149px;
+    width:35px;
+    height:33px;
+    background:url(../img/carOneLeft.png) no-repeat;
+    z-index: 2;
+    -webkit-backface-visibility: hidden;
+}
+
+#carThree {
+    position:absolute;
+    top: 82px;
+    left: 169px;
+    width:35px;
+    height:33px;
+    background:url(../img/carOneLeft.png) no-repeat;
+    z-index: 2;
+    -webkit-backface-visibility: hidden;
+}
+
+#carFour {
+    position:absolute;
+    top: 80px;
+    left: 174px;
+    width:33px;
+    height:35px;
+    background:url(../img/carOne.png) no-repeat;
+    z-index: 2;
+   
+    -webkit-backface-visibility: hidden;
+}
+
+#carFive {
+    position:absolute;
+    top: 78px;
+    left: 832px;
+    width:33px;
+    height:35px;
+    background:url(../img/carOneLeft.png) no-repeat;
+    z-index: 2;
+    -webkit-backface-visibility: hidden;
+}
+
+#carSix {
+    position:absolute;
+    top: 78px;
+    left: 223px;
+    width:33px;
+    height:35px;
+    background:url(../img/carOne.png) no-repeat;
+    z-index: 2;
+    -webkit-backface-visibility: hidden;
+}
+
+#carSeven {
+    position:absolute;
+    top: 78px;
+    left: 329px;
+    width:33px;
+    height:35px;
+    background:url(../img/carOneLeft.png) no-repeat;
+    z-index: 2;
+    -webkit-backface-visibility: hidden;
+}
+
+#carEight {
+    position:absolute;
+    top: 78px;
+    left: 169px;
+    width:33px;
+    height:35px;
+    background:url(../img/carOneLeft.png) no-repeat;
+    z-index: 2;
+
+    -webkit-backface-visibility: hidden;
+}
+
+#carNine {
+    position:absolute;
+    top: 422px;
+    left: 715px;
+    width:33px;
+    height:35px;
+    background:url(../img/carOneRight.png) no-repeat;
+    z-index: 2;
+    -webkit-backface-visibility: hidden;
+}
+
+#carTen {
+    position:absolute;
+    top: 653px;
+    left: 208px;
+    width:33px;
+    height:35px;
+    background:url(../img/carOneLeft.png) no-repeat;
+    z-index: 2;
+    -webkit-backface-visibility: hidden;
+}
+
+
+#finishOne {
+    position:absolute;
+    top: 630px;
+    left: 482px;
+    width:57px;
+    height:43px;
+    background:url(../img/finish.png) no-repeat;
+    z-index: 3;
+    -webkit-backface-visibility: hidden;
+}
+
+#finishTwo {
+    position:absolute;
+    top: 647px;
+    left: 802px;
+    width:57px;
+    height:43px;
+    background:url(../img/finish.png) no-repeat;
+    z-index: 99;
+    -webkit-transform:rotate(-90deg);
+    -webkit-backface-visibility: hidden;
+}
+
+#finishThree {
+    position:absolute;
+    top: 647px;
+    left: 204px;
+    width:57px;
+    height:43px;
+    background:url(../img/finish.png) no-repeat;
+    z-index: 99;
+    -webkit-transform:rotate(-90deg);
+    -webkit-backface-visibility: hidden;
+}
+
+#finishFour {
+    position:absolute;
+    top: 627px;
+    left: 760px;
+    width:57px;
+    height:43px;
+    background:url(../img/finish.png) no-repeat;
+    z-index: 99;
+    -webkit-backface-visibility: hidden;
+}
+
+#finishFive {
+    position:absolute;
+    top: 646px;
+    left: 180px;
+    width:57px;
+    height:43px;
+    background:url(../img/finish.png) no-repeat;
+    z-index: 99;
+    -webkit-transform:rotate(-90deg);
+    -webkit-backface-visibility: hidden;
+}
+
+#finishSix {
+    position:absolute;
+    top: 310px;
+    left: 321px;
+    width:57px;
+    height:43px;
+    background:url(../img/finish.png) no-repeat;
+    z-index: 99;
+    -webkit-transform:rotate(-90deg);
+    -webkit-backface-visibility: hidden;
+}
+
+#finishSeven {
+    position:absolute;
+    top: 622px;
+    left: 684px;
+    width:57px;
+    height:43px;
+    background:url(../img/finish.png) no-repeat;
+    z-index: 99;
+    -webkit-backface-visibility: hidden;
+}
+
+#finishEight {
+    position:absolute;
+    top: 592px;
+    left: 865px;
+    width:57px;
+    height:43px;
+    background:url(../img/finish.png) no-repeat;
+    z-index: 99;
+    -webkit-backface-visibility: hidden;
+}
+
+#finishNine {
+    position:absolute;
+    top: 617px;
+    left: 771px;
+    width:57px;
+    height:43px;
+    background:url(../img/finish.png) no-repeat;
+    z-index: 99;
+    -webkit-backface-visibility: hidden;
+}
+
+#finishTen {
+    position:absolute;
+    top: 596px;
+    left: 195px;
+    width:57px;
+    height:43px;
+    background:url(../img/finish.png) no-repeat;
+    z-index: 99;
+    -webkit-backface-visibility: hidden;
+}
+
+
+@font-face {
+	font-weight:400;
+	font-style:normal;
+	font-family:'soup_of_justicesoupofjustice';
+	src:url(../font/soupofjustice-webfont.eot);
+	src:url(../font/soupofjustice-webfont.eot?#iefix) format("embedded-opentype"),url(../font/soupofjustice-webfont.woff) format("woff"),url(../font/soupofjustice-webfont.ttf) format("truetype"),url(../font/soupofjustice-webfont.svg#soup_of_justicesoupofjustice) format("svg");
+}
+
+@font-face {
+	font-weight:400;
+	font-style:normal;
+	font-family:'amaticbold';
+	src:url(../font/amatic-bold-webfont.eot);
+	src:url(../font/amatic-bold-webfont.eot?#iefix) format("embedded-opentype"),url(../font/amatic-bold-webfont.woff) format("woff"),url(../font/amatic-bold-webfont.ttf) format("truetype"),url(../font/amatic-bold-webfont.svg#amaticbold) format("svg");
+}
+
+@font-face {
+	font-weight:400;
+	font-style:normal;
+	font-family:'amatic_scregular';
+	src:url(../font/amaticsc-regular-webfont.eot);
+	src:url(../font/amaticsc-regular-webfont.eot?#iefix) format("embedded-opentype"),url(../font/amaticsc-regular-webfont.woff) format("woff"),url(../font/amaticsc-regular-webfont.ttf) format("truetype"),url(../font/amaticsc-regular-webfont.svg#amatic_scregular) format("svg");
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+
+    #containerIntro {
+        background:url(../img/bg-intro@2x.png) no-repeat;
+    }
+    #spaceMap {
+        background: url(../img/map-space@2x.png) center no-repeat;
+    }
+    #tapappapa {
+        background:url(../img/tapappapa@2x.png) no-repeat;
+    }
+    #containerRuimte {
+        background:url(../img/bg-ruimte@2x.png) no-repeat;
+    }
+    #containerLucht {
+        background:url(../img/bg-lucht@2x.png) no-repeat;
+    }
+    #containerAarde {
+        background: url(../img/bg-aarde@2x.png) no-repeat;
+    }
+    #containerWater {
+        background: url(../img/bg-water@2x.png) no-repeat;
+    }
+    #containerIntro {
+        background:url(../img/bg-intro@2x.png) no-repeat;
+    }
+    #airMap {
+        width:114px;
+        height:75px;
+        background: url('../img/map-lucht@2x.png') center no-repeat;
+    }
+    #groundMap {
+        width:114px;
+        height:75px;
+        background: url('../img/map-aarde@2x.png') center no-repeat;
+    }
+    #waterMap {
+        background: url('../img/map-water@2x.png') center no-repeat;
+
+    }
+    #vliegtuig {
+        background:url(../img/vliegtuig@2x.png) no-repeat;
+    }
+
+    #vogel {
+        background:url(../img/vogel@2x.png) no-repeat;
+    }
+
+    #wolk1 {
+        background:url(../img/wolk1@2x.png) no-repeat;
+    }
+
+    #zon {
+        background:url(../img/zon@2x.png) no-repeat;
+    }
+
+    #zonnestralen {
+        background:url(../img/zonnestralen@2x.png) no-repeat;
+    }
+
+    #wolk2 {
+        background:url(../img/wolk2@2x.png) no-repeat;
+    }
+
+    #wolk3 {
+        background:url(../img/wolk3@2x.png) no-repeat;
+    }
+
+    #pet1 {
+        background:url(../img/pet1@2x.png) no-repeat;
+    }
+
+    #ventje1 {
+        background:url(../img/ventje1@2x.png) no-repeat;
+    }
+
+    #pet2 {
+        background:url(../img/pet2@2x.png) no-repeat;
+    }
+
+    #ventje2 {
+        background:url(../img/ventje2@2x.png) no-repeat;
+    }
+
+    #pet3 {
+        background:url(../img/pet3@2x.png) no-repeat;
+    }
+
+    #ventje3 {
+        background:url(../img/ventje3@2x.png) no-repeat;
+    }
+
+    #heli {
+        background:url(../img/heli@2x.png) no-repeat;
+    }
+
+    #pet4 {
+        background:url(../img/pet4@2x.png) no-repeat;
+    }
+
+    #ballon {
+        background:url(../img/ballon@2x.png) no-repeat;
+    }
+
+    #ballon2 {
+        background:url(../img/ballon@2x.png) no-repeat;
+    }
+
+    #ballon3 {
+        background:url(../img/ballon@2x.png) no-repeat;
+    }
+
+    #logoKlein {
+        background:url(../img/logo-klein@2x.png) no-repeat;
+    }
+
+
+    #aarde-vent-1 {
+        background:url(../img/aarde-vent-1@2x.png) no-repeat;
+    }
+
+    #aarde-ballon-1 {
+        background:url(../img/aarde-ballon-1@2x.png) no-repeat;
+    }
+
+    #aarde-vent-2 {
+        background:url(../img/aarde-vent-2@2x.png) no-repeat;
+    }
+
+    #aarde-ballon-2 {
+        background:url(../img/aarde-ballon-2@2x.png) no-repeat;
+    }
+
+    #aarde-vent-3 {
+        background:url(../img/aarde-vent-3@2x.png) no-repeat;
+    }
+    #aarde-ballon-3 {
+        background:url(../img/aarde-ballon-3@2x.png) no-repeat;
+    }
+
+
+
+
+
+
+
+    #aarde-vent-4 {
+        position:absolute;
+        top:500px;
+        left:460px;
+        z-index:11;
+        width:55px;
+        height:140px;
+        background:url(../img/aarde-vent-4@2x.png) no-repeat;
+    }
+
+
+
+    #aarde-ballon-4 {
+        position:absolute;
+        top:490px;
+        left:510px;
+        z-index:10;
+        width:38px;
+        height:89px;
+        background:url(../img/aarde-ballon-4@2x.png) no-repeat;
+    }
+
+    #aarde-vent-5 {
+        position:absolute;
+        top:500px;
+        left:560px;
+        z-index:11;
+        width:55px;
+        height:140px;
+        background:url(../img/aarde-vent-5@2x.png) no-repeat;
+    }
+
+    #aarde-ballon-5 {
+        position:absolute;
+        top:490px;
+        left:527px;
+        z-index:10;
+        width:38px;
+        height:89px;
+        background:url(../img/aarde-ballon-5@2x.png) no-repeat;
+    }
+
+    #aarde-vent-6 {
+        position:absolute;
+        top:500px;
+        left:680px;
+        z-index:11;
+        width:55px;
+        height:140px;
+        background:url(../img/aarde-vent-6@2x.png) no-repeat;
+    }
+
+    #aarde-ballon-6 {
+        position:absolute;
+        top:490px;
+        left:645px;
+        z-index:10;
+        width:38px;
+        height:89px;
+        background:url(../img/aarde-ballon-6@2x.png) no-repeat;
+    }
+
+    #aarde-ballon-7 {
+        position:absolute;
+        top:490px;
+        left:740px;
+        z-index:10;
+        width:38px;
+        height:89px;
+        background:url(../img/aarde-ballon-7@2x.png) no-repeat;
+    }
+
+    #auto {
+        position:absolute;
+        top:515px;
+        right:50px;
+        z-index:20;
+        width:240px;
+        height:209px;
+        background:url(../img/auto@2x.png) no-repeat;
+    }
+
+    #auto2 {
+        position:absolute;
+        top:550px;
+        left:30px;
+        z-index:25;
+        width:256px;
+        height:209px;
+        background:url(../img/auto-2@2x.png) no-repeat;
+    }
+
+    #bus {
+        position:absolute;
+        top:510px;
+        left:540px;
+        z-index:21;
+        width:242px;
+        height:241px;
+        background:url(../img/bus@2x.png) no-repeat;
+    }
+
+    #weg {
+        position:absolute;
+        bottom:0;
+        left:0;
+        width:1024px;
+        height:172px;
+        background:url(../img/aarde-weg@2x.png) no-repeat;
+    }
+
+
+
+    #stad {
+        background:url(../img/stad@2x.png) no-repeat;
+    }
+
+    #stoep {
+        background:url(../img/stoep@2x.png) no-repeat;
+    }
+
+    #trein {
+        background:url(../img/trein@2x.png) no-repeat;
+    }
+
+    #stam1 {
+        background:url(../img/stam1@2x.png) no-repeat;
+    }
+
+    #stam2 {
+        background:url(../img/stam2@2x.png) no-repeat;
+    }
+
+    #stam3 {
+        background:url(../img/stam2@2x.png) no-repeat;
+    }
+
+    #kruin1 {
+        background:url(../img/kruin1@2x.png) no-repeat;
+    }
+
+    #kruin2 {
+        background:url(../img/kruin2@2x.png) no-repeat;
+    }
+
+    #kruin3 {
+        background:url(../img/kruin3@2x.png) no-repeat;
+    }
+
+    #landschap {
+        background:url(../img/landschap@2x.png) no-repeat;
+    }
+
+    #astronout1 {
+        background:url(../img/astronout-1@2x.png) no-repeat;
+    }
+
+    #astronout2 {
+        background:url(../img/astronout-2@2x.png) no-repeat;
+    }
+
+    #astronout3 {
+        background:url(../img/astronout-3@2x.png) no-repeat;
+    }
+
+    #spaceship {
+        background:url(../img/spaceship@2x.png) no-repeat;
+    }
+
+
+    #ster1 {
+        background:url(../img/ster-1@2x.png) no-repeat;
+    }
+
+    #ster2 {
+        background:url(../img/ster-2@2x.png) no-repeat;
+    }
+
+    #ster3 {
+        background:url(../img/ster-3@2x.png) no-repeat;
+    }
+
+    #ster4 {
+        background:url(../img/ster-4@2x.png) no-repeat;
+    }
+
+
+    #ster5 {
+        background:url(../img/ster-5@2x.png) no-repeat;
+    }
+
+    #raket {
+        background:url(../img/raket@2x.png) no-repeat;
+    }
+
+    #komeet {
+        background:url(../img/komeet@2x.png) no-repeat;
+    }
+
+    #vis1 {
+        background:url(../img/vis1@2x.png) no-repeat;
+    }
+
+    #vis2 {
+        background:url(../img/vis2@2x.png) no-repeat;
+    }
+
+    #vis3 {
+        background:url(../img/vis3@2x.png) no-repeat;
+    }
+
+    #vis4 {
+        background:url(../img/vis4@2x.png) no-repeat;
+    }
+
+    #vis5 {
+        background:url(../img/vis5@2x.png) no-repeat;
+    }
+
+
+    #vis6 {
+        background:url(../img/vis6@2x.png) no-repeat;
+    }
+
+
+    #vis7 {
+        background:url(../img/vis7@2x.png) no-repeat;
+    }
+
+    #vis8 {
+        background:url(../img/vis8@2x.png) no-repeat;
+    }
+
+    #vis9 {
+        background:url(../img/vis9@2x.png) no-repeat;
+    }
+
+    #vis10 {
+        background:url(../img/vis10@2x.png) no-repeat;
+    }
+
+    #bodem {
+        background:url(../img/bodem@2x.png) no-repeat;
+    }
+
+    #duikboot {
+        background:url(../img/duikboot@2x.png) no-repeat;
+    }
+
+    #torpedo {
+        background:url(../img/torpedo@2x.png) no-repeat;
+
+    }
+
+    #duiker {
+        background:url(../img/duiker@2x.png) no-repeat;
+    }
+
+    #wrak {
+        background:url(../img/wrak@2x.png) no-repeat;
+    }
+
+    #monster {
+        background:url(../img/monster@2x.png) no-repeat;
+    }
+
+
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title><!-- Stylesheets -->
+        <link type="text/css" href="assets/css/style.css" rel="stylesheet"><!-- Javascript -->
+
+
+        <script type="text/javascript" src="assets/js/jquery.js"></script>
+        <script type="text/javascript" src="assets/js/transit.js"></script>
+        <script type="text/javascript" src="assets/js/hammer.js"></script>
+        <script type="text/javascript" src="assets/js/script.js"></script>
+        <script src="phonegap.js" type="text/javascript"></script>
+        <script>
+	        document.ontouchmove = function(e){ 
+						e.preventDefault(); 
+					}
+        </script>
+            <script>
+            function onLoad(){
+                document.addEventListener("deviceready", onDeviceReady, true);
+            }
+            function onDeviceReady(){
+                navigator.splashscreen.hide();
+            }
+        </script>
+    </head>
+    <body onload="onLoad()">
+    <!--
+<div id="score">
+            <p class="hits">
+                0
+            </p>
+        </div>
+-->
+    <div id="logoKlein"></div>
+        <div id="mainContainer">
+        		<div id="containerIntro">
+	        		<div id="tapappapa"></div>
+                    <div class="subline">Apps for the Little Ones</div>
+	        		<div class="introText">
+		        		<h1>Tapappapa: Number Racing!</h1>
+                        <br />
+		        		<p class="intro">Tapappapa creates <span class="pGreen">fun little worlds</span>. Toddlers <span class="pBlue">learn by playing</span> and they learn a lot between ages 1 and 3. During these important years, toddlers will enjoy <span class="pOrange">playing simple games</span> with their parents and other caregivers.</p><br />
+		        		<p class="intro">This app contains ten "racing tracks". It's main purpose is to tap on the driving car and score points.</p><br />
+		        		<p class="intro"><span class="yeah">This app is safe.</span> No banners, no in-app purchases, no links.</p>
+                        <br />
+                        <p class="intro small">More information and contact visit: <span class="pBlue">tapappapa.com</span></p>
+	        		</div>
+        		</div>
+            <div id="containerRaceOne">
+                  <div id="finishOne" class="finish"></div>
+                  <div id="carOne"></div>
+            </div>
+            <div id="containerRaceTwo">
+                  <div id="finishTwo" class="finish"></div>
+                  <div id="carTwo"></div>
+            </div>
+            <div id="containerRaceThree">
+                  <div id="finishThree" class="finish"></div>
+                  <div id="carThree"></div>
+            </div>
+            <div id="containerRaceFour">
+                  <div id="finishFour" class="finish"></div>
+                  <div id="carFour"></div>
+            </div>
+            <div id="containerRaceFive">
+                  <div id="finishFive" class="finish"></div>
+                  <div id="carFive"></div>
+            </div>
+            <div id="containerRaceSix">
+                  <div id="finishSix" class="finish"></div>
+                  <div id="carSix"></div>
+            </div>
+            <div id="containerRaceSeven">
+                  <div id="finishSeven" class="finish"></div>
+                  <div id="carSeven"></div>
+            </div>
+            <div id="containerRaceEight">
+                  <div id="finishEight" class="finish"></div>
+                  <div id="carEight"></div>
+            </div>
+            <div id="containerRaceNine">
+                  <div id="finishNine" class="finish"></div>
+                  <div id="carNine"></div>
+            </div>
+            <div id="containerRaceTen">
+                  <div id="finishTen"></div>
+                  <div id="carTen"></div>
+            </div>
+        </div>
+    </body>
+</html>

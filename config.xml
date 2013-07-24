@@ -1,0 +1,46 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.wittebrood.books.tapappapa"
+        version   = "1.0.0">
+
+    <name>Tapappapa</name>
+
+    <description>
+        Little interactive worlds to explore.
+    </description>
+
+    <author href="http://www.tapappapa.com" email="arnout@tapappapa.com">
+        Arnout Wittebrood
+    </author>
+
+
+    <!-- Customize your app and platform with the preference element. -->
+    <icon src="assets/icons/ios/icon.png" gap:platform="ios" width="57" height="57" />
+    <icon src="assets/icons/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
+    <icon src="assets/icons/ios/icon_at_2x.png" gap:platform="ios" width="114" height="114" />
+
+    <gap:splash src="assets/splash/ios/Default-Landscape.png" gap:platform="ios" width="1024" height="768" />
+
+    <!-- retina iPad support: PhoneGap 2.5.0+ only -->
+    <gap:splash src="assets/splash/ios/Default-Landscape_at_2x.png" gap:platform="ios" width="2048" height="1496" />
+
+    <!-- retina iPad support: PhoneGap 2.5.0+ only -->
+    <icon src="assets/icons/ios/icon-72_at_2x.png" gap:platform="ios" width="144" height="144" />
+
+    <preference name="phonegap-version" value="2.7.0" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="show-splash-screen-spinner" value="hide" />
+    <preference name="auto-hide-splash-screen"    value="false" />           <!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->
+    <preference name="splash-screen-duration" value="5000" />
+
+    <preference name="orientation"                value="landscape" />        <!-- all: default means both landscape and portrait are enabled -->
+    <preference name="target-device"              value="tablet" />      		<!-- all: possible values handset, tablet, or universal -->
+    <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
+    <preference name="webviewbounce"              value="false" />           <!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
+
+
+</widget>
