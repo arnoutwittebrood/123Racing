@@ -4,13 +4,13 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.wittebrood.books.tapappapa"
+        id        = "com.wittebrood.books.123Racing"
         version   = "1.0.0">
 
-    <name>Tapappapa</name>
+    <name>123 Racing</name>
 
     <description>
-        Little interactive worlds to explore.
+        Tapappapa: Little interactive worlds to explore.
     </description>
 
     <author href="http://www.tapappapa.com" email="arnout@tapappapa.com">
